@@ -1,39 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
-  text-align: center;
+  height: 100vh;
+  background-color: #cc316d;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.flex {
+  display: flex;
+  justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navBar {
+  justify-content: space-between;
+  padding: 20px;
+  background: #cc316d;
+  width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.top-section {
+  padding: 30px;
+  background-color: #ec4c8a;
+  display: flex;
+  justify-content: space-between;
+}
+
+.circle {
+  color: antiquewhite;
+}
+
+.stats-text {
+  background-color: #cc316d;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.row {
+  width: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.list li {
+  background-color: #ec4c8a;
+  padding: 30px;
+  display: flex;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+img {
+  width: 100%;
+  height: 80px;
+  object-fit: cover;
+  object-position: center center;
+}
+
+
+.image_container {
+  width: 50%;
+  height: 12rem;
+}
+
+.icon {
+  width: 40px;
+  height: 30px;
+}
+
+li:nth-child(2n) {
+  background-color: #cc316d;
+}
+
+li:nth-child(2n+1) {
+  background-color: #ec4c8a;
+}
+
+li:nth-child(4n+1),
+li:nth-child(4n+4) {
+  background-color: #cc316d;
+}
+
+li:nth-child(4n+2),
+li:nth-child(4n+3) {
+  background-color: #ec4c8a;
+}
+
+.nav_link {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: whitesmoke;
+  align-self: flex-end;
+  align-items: flex-end;
+  width: 50%;
 }
 
-.App-link {
-  color: #61dafb;
+.detail-list {
+  display: flex;
+  flex-direction: column;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (min-width:600px){
+  ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto; 
+    list-style: none;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 992px){
+  ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto; 
+    list-style: none;
+    justify-content: center;
   }
 
-  to {
-    transform: rotate(360deg);
-  }
+  .country_list .container{
+    margin-left: 5rem;
+  } 
 }
