@@ -1,4 +1,4 @@
-/* eslint react/prop-types: 0 */
+// import PropTypes from 'prop-types';
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import { fetchCountries } from '../../redux/countries/countriesSlice';
@@ -43,3 +43,11 @@ export default function Countries() {
     </>
   );
 }
+
+// Countries.propTypes = {
+//   countries: PropTypes.arrayOf(PropTypes.shape({
+//     id: PropTypes.number.isRequired,
+//     name: PropTypes.string.isRequired,
+//     population: PropTypes.number.isRequired,
+//   })).isRequired,
+// };

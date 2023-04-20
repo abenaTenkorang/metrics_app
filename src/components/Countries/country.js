@@ -1,4 +1,4 @@
-/* eslint react/prop-types: 0 */
+import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
 import { HiOutlineArrowCircleRight } from 'react-icons/hi';
 
@@ -18,3 +18,11 @@ export default function Country({ country }) {
     </>
   );
 }
+
+Country.propTypes = {
+  country: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    flag: PropTypes.string.isRequired,
+    population: PropTypes.number.isRequired,
+  }).isRequired,
+};
