@@ -17,7 +17,7 @@ export default function Details() {
   }, [dispatch]);
 
   return (
-    <div className="homepage">
+    <div className="homepage" data-testid="details">
       {status === 'loading' && <h3>loading...</h3>}
       {error && <h3>{error.message}</h3>}
       {list && <Detail country={list} key={list.id} />}
