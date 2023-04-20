@@ -59,7 +59,7 @@ A powerful and intuitive web application. Powered by the Rest Country API, Metri
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-- [Live Demo Link](coming soon)
+- [Live Demo Link](https://metrics-7m7l.onrender.com)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
