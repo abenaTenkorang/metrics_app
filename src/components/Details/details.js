@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { fetchCountries } from '../../redux/countries/countriesSlice';
 import Detail from './detail';
-import './details-styles.css';
+import '../../details-styles.css';
 
 export default function Details() {
   const { countries, status, error } = useSelector((state) => state.countries);
