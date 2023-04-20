@@ -1,4 +1,3 @@
-// import PropTypes from 'prop-types';
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import { fetchCountries } from '../../redux/countries/countriesSlice';
@@ -23,7 +22,7 @@ export default function Countries() {
   return (
     <>
       <Header />
-      <div className="homepage">
+      <div className="homepage" data-testid="countries">
         <div className="top-section">
           <div>
             <img src={map} alt="globe" />
@@ -43,11 +42,3 @@ export default function Countries() {
     </>
   );
 }
-
-// Countries.propTypes = {
-//   countries: PropTypes.arrayOf(PropTypes.shape({
-//     id: PropTypes.number.isRequired,
-//     name: PropTypes.string.isRequired,
-//     population: PropTypes.number.isRequired,
-//   })).isRequired,
-// };
