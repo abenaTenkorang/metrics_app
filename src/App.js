@@ -10,7 +10,6 @@ function App() {
         <Route path="/" element={<Countries />} />
         <Route path="/details/:id" element={<Details />} />
       </Routes>
-
     </div>
   );
 }
