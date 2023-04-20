@@ -143,7 +143,7 @@ If you like this project please give me a ⭐️
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse for the wireframe for this project.
+I would like to thank Nelson Sakwa on Behance for providing design guidelines and template for this project
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
