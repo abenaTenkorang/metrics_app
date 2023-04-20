@@ -1,0 +1,32 @@
+.card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #cf4378;
+  padding: 20px;
+}
+
+.image {
+  width: 200px;
+  height: auto;
+}
+
+.HomeCard > h3 {
+  background-color: #cc316d;
+  padding: 10px;
+  color: white;
+}
+
+.description {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.detail-list > li:nth-child(odd) {
+  background-color: #cc316d;
+}
+
+.detail-list > li:nth-child(even) {
+  background-color: #cf4378;
+}
